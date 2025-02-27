@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Enter the randon string with IP-address: ");
+        System.out.println("Enter the random string with IP-address: ");
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
 

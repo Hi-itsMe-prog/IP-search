@@ -8,12 +8,12 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
 
-        String ipRegex = "\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b";
+        String ipRegex = "\\b(([1-9]?[1-9]?[1-9]().){3}([1-9]?[1-9]?[1-9]))\\b";
         Pattern pattern = Pattern.compile(ipRegex);
         Matcher matcher = pattern.matcher(s);
 
-        boolean found = false;
 
+        boolean found = false;
         while (matcher.find()) {
             System.out.println(matcher.group());
             found = true;
